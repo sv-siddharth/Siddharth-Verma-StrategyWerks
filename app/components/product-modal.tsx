@@ -44,7 +44,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ productId, onClose, onError
       
       <DialogContent className="max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto p-4 md:p-6 lg:p-8 max-h-[80vh]">
         <div className="relative">
-          <DialogHeader className="sticky top-0 pb-4 z-10 bg-white">
+          <DialogHeader className="sticky top-0 pb-4 z-10">
             <DialogTitle className="text-lg md:text-xl lg:text-2xl">{productDetails.title}</DialogTitle>
           </DialogHeader>
           <div className="overflow-y-auto max-h-[70vh] p-4 md:p-6 lg:p-8">
