@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: '/Siddharth-Verma-StrategyWerks',
+  assetPrefix: '/Siddharth-Verma-StrategyWerks/',
 };
 
 export default nextConfig;
