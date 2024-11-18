@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Siddharth Verma Assignment - E-Commerce
+
+This is an E-Commerce web application built using [Next.js](https://nextjs.org). This project is a submission for StrategyWerks.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/example/repository.git
+cd repository
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### Running the Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Design Decisions and Patterns
+```bash
+Next.js
+This project is built using Next.js, a React framework that enables server-side rendering and static site generation. Next.js provides a great developer experience with features like file-based routing, API routes, and built-in CSS support.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+React Query
+We use React Query for data fetching and state management. React Query simplifies data fetching, caching, and synchronization with the server.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tailwind CSS
+The application uses Tailwind CSS for styling. Tailwind CSS is a utility-first CSS framework that allows for rapid UI development with a consistent design system.
+```
 
-## Learn More
+## Component Structure
+The application is structured with reusable components to ensure maintainability and scalability. Key components include:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+ProductList: Displays a list of products with infinite scrolling.
+ProductCard: Represents a single product card.
+ProductModal: Displays detailed information about a selected product.
+Filters: Provides filtering options for sorting products by category, price range, and rating.
+Error Handling
+Error handling is implemented in key components to provide feedback to users when data fetching fails. Error messages are displayed in a user-friendly manner.
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Optimizations
+```bash
+Lazy Loading: Images are lazy-loaded to improve performance and reduce initial load time.
+```
+```bash
+Responsive Design: The application is designed to be responsive and works well on mobile, tablet, and desktop devices.
+```
+```bash
+Code Splitting: Next.js automatically splits code to improve load times and performance.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Known Limitations
+```bash
+API Rate Limiting: The application relies on a third-party API for product data. Rate limiting may affect the application's performance during high traffic.
+```
+```bash
+Limited Filtering Options: The current implementation provides basic filtering options. Advanced filtering and sorting features can be added in future iterations.
+```
+```bash
+Accessibility: While basic accessibility features are implemented, further improvements can be made to ensure the application is fully accessible to all users.
+```
 
-## Deploy on Vercel
+Repository
+You can find the code repository on my GitHub:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://github.com/sv-siddharth/Siddharth-Verma-StrategyWerks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
